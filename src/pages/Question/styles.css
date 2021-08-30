@@ -1,0 +1,22 @@
+.questionContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height:100vh;
+}
+
+.questionContainer h1{
+    font-size: 1.5rem;
+    display: flex;
+    text-align: center;
+    
+}
+
+.questionContainer ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:0.5rem;
+    margin-top: 0;
+    list-style: none;
+}
