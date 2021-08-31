@@ -22,7 +22,7 @@ export const Question = () =>{
     const {results} = questions
     const [currentQuestion, setCurrentQuestion] = useState(0)
     const [options, setOptions] = useState([])
-    const [lastQuestion, setLastQuestion] = useState(false)
+    const [lastQuestion] = useState(false)
     const [lastQuestionWasAnswered, setLastQuestionWasAnswered] = useState(false)
     
     const isLastQuestion = currentQuestion + 1 === results.length
