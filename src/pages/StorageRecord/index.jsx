@@ -67,17 +67,17 @@ export const StorageRecord = () => {
                         key ={`storage-record${Math.random()}`} 
                         className = {giveBackgroundStyle(chosenAnswer, correctAnswer)}>
                         
-                        <span >resposta escolhida: {chosenAnswer}</span>
+                        <span >chosen answer: {chosenAnswer}</span>
                         <span><HighlightOffOutlinedIcon/></span>  
                     </div>
 
-                    <span className="chosenAnswer">resposta correta: {correctAnswer}</span>
+                    <span className="chosenAnswer">correct answer: {correctAnswer}</span>
                 
                 </>
             )
             
             : <div className="correctAnswer">
-                <span>resposta correta: {correctAnswer}</span>
+                <span>correct answer: {correctAnswer}</span>
                 <span><CheckCircleOutlinedIcon /></span>
             </div>
             
@@ -102,12 +102,12 @@ export const StorageRecord = () => {
         <div className="recordContainer">
             <div className="score-wrapper">
                 <h4>Score: {storageScore?.score.toFixed(2)}%</h4>
-                <h4>Erros: {storageScore?.mistakes}</h4>
-                <h4>Acertos:{storageScore?.hits}</h4>
+                <h4>Mistakes: {storageScore?.mistakes}</h4>
+                <h4>Hits:{storageScore?.hits}</h4>
 
             </div>
             <div className="returnToBeggining">
-                <Link className="link" to='/'> início <ArrowBackIcon/></Link>
+                <Link className="link" to='/'> Home <ArrowBackIcon/></Link>
             </div>
             <div className={defineFLexOrGridLayout(storageAnswers.length)}>
                 {storageAnswers.map(record => renderRecords(record))}

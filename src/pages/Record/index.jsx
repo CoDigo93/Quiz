@@ -36,17 +36,17 @@ export const Record = () => {
              chosenAnswer !== correctAnswer ? (
                 <>
                     <div className = {giveBackgroundStyle(chosenAnswer, correctAnswer)}>
-                        <span >resposta escolhida: {chosenAnswer}</span>
+                        <span >chosen answer: {chosenAnswer}</span>
                         <span><HighlightOffOutlinedIcon/></span>  
                     </div>
 
-                    <span className="chosenAnswer">resposta correta: {correctAnswer}</span>
+                    <span className="chosenAnswer"> correct answer: {correctAnswer}</span>
                 
                 </>
             )
             
             : <div className="correctAnswer">
-                <span>resposta correta: {correctAnswer}</span>
+                <span>correct answer: {correctAnswer}</span>
                 <span><CheckCircleOutlinedIcon /></span>
             </div>
             
@@ -84,12 +84,12 @@ export const Record = () => {
         <div className="recordContainer">
             <div className="score-wrapper">
                 <h4>Score: {score.toFixed(2)}%</h4>
-                <h4>Erros: {mistakes}</h4>
-                <h4>Acertos:{hits}</h4>
+                <h4>Mistakes: {mistakes}</h4>
+                <h4>Hits:{hits}</h4>
 
             </div>
             <div className="returnToBeggining">
-                <button className="link" onClick={backToBeggining}> início <ArrowBackIcon/></button>
+                <button className="link" onClick={backToBeggining}> Home <ArrowBackIcon/></button>
             </div>
             <div className={defineFLexOrGridLayout(recordOfAnswers.length)}>
             {recordOfAnswers.map(record => renderRecords(record))}

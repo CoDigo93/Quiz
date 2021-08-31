@@ -56,7 +56,7 @@ export const ConfirmationPage = () => {
     return(
         <div className="wrapperConfirmation">
     
-            <h1> Aperte "start" para iniciar o quiz! "Cancel" para retornar!</h1>
+            <h1> Press "start" to answer the quiz! "Cancel" to return to home!</h1>
             <div className="confirmationContainer">
             
                 {loading ? <CircularProgress/> : renderButtons }    

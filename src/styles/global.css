@@ -74,35 +74,3 @@ footer{
     
     
 }
-
-
-/* ////////////////shape devider ////////////////////*/
-
-.custom-shape-divider-top-1629489666 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-}
-
-.custom-shape-divider-top-1629489666 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 147px;
-    transform: rotateY(180deg);
-}
-
-.custom-shape-divider-top-1629489666 .shape-fill {
-    fill: #FFFFFF;
-}
-
-/** For tablet devices **/
-@media (min-width: 768px) and (max-width: 1023px) {
-    .custom-shape-divider-top-1629489666 svg {
-        width: calc(100% + 1.3px);
-        height: 272px;
-    }
-}

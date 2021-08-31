@@ -6,7 +6,7 @@ import { useHistory } from 'react-router-dom'
 import { Button } from '@material-ui/core'
 import AssessmentIcon from '@material-ui/icons/Assessment';
 
-import img from './assets/2.png'
+import img from './assets/logodefinitivo.png'
 
 
 
@@ -54,7 +54,7 @@ function App() {
 
         <div className='right-section'>
           
-          <h1> Quantas perguntas você deseja responder?</h1>
+          <h1> How many questions do you want to answer?</h1>
 
             <div className='div-buttons'>
               <OptionButton value={1} onClick={e => handleOPtion(e)}/>
@@ -76,7 +76,7 @@ function App() {
                 variant = 'contained'
                 disabled = {!hasStorage ? true : false}
               >
-                Veja seu resultado prévio!
+                Check your previous result!
                 
                 <AssessmentIcon />  
               </Button>
