@@ -47,7 +47,7 @@ function App() {
     <main className='mainContainer'>
       
         <div className='div-image'>
-          <img src={img} alt='imagem' />
+          <img src='https://ik.imagekit.io/rdlustosa/logodefinitivo_Y43G3YVPQ.png?updatedAt=1633207371042' alt='imagem' />
         </div>
         
 
